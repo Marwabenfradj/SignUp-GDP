@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-content">
+        <div class="cover">
+          <img src="./img/cover1.jpg" alt="" />
+        </div>
+        <div class="content">
+          <div class="title">
+            <div>
+              <h2>Welcome to GDP</h2>
+              <p>Fill out the form to register</p>
+            </div>
+            <img src="./img/logo.jpg" alt="" />
+          </div>
+          <div class="form">
+            <div class="box email">
+              <label for="email"
+                >Adress Email
+                <span id="verifemail">email non valide !</span></label
+              >
+              <input type="email" id="email" placeholder="Email adress" />
+            </div>
+            <div class="box password">
+              <label for="password"
+                >mot de passe
+                <span id="verifpassword"
+                  >mot de passe minimum 5 lettres !</span
+                ></label
+              >
+              <input type="password" id="password" placeholder="Password" />
+            </div>
+            <div class="box passwordconfirm">
+              <label for="passwordconfirm"
+                >Confirmation Mot de passe
+                <span id="verifpasswordconfirm"
+                  >mot de passe non confirme !</span
+                ></label
+              >
+              <input
+                type="password"
+                id="passwordconfirm"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <div class="condition">
+              <input type="checkbox" name="" id="terms" />
+              <p>
+                I agree to the <u>Terms And Conditions</u
+                ><span id="verifterms">accept terms !</span>
+              </p>
+            </div>
+            <div class="account">
+              <p>Already have an account?<strong>Login</strong></p>
+              <button id="submit">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

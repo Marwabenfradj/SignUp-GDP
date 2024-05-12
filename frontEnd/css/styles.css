@@ -1,0 +1,244 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --secondary-color: #d2d2d2;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ececec;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    position: relative;
+
+}
+h1, p {
+    margin: 0;
+}
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+/* End Global Rules */
+.container-content {
+    display: flex;
+    gap: 50px;
+    min-height: 100vh;
+}
+.cover {
+    position: relative;
+    max-width: 400px;
+}
+.cover img {
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+}
+.cover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1786e063;
+}
+@media (max-width: 991px){
+    .cover {
+        display: none;
+    }
+    .container-content {
+        background-color: #1786e00c;
+    }
+}
+.content {
+    width: 100%;
+    padding: 40px 50px;
+}
+
+.content .title img{
+
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  
+  
+
+  width: 100px;
+  height: 100px;
+}
+.content .title p {
+    color: gray;
+    margin-top: 10px;
+}
+.form {
+    margin-top: 10vh;
+}
+.form .box {
+    padding-bottom: 20px;
+}
+.form .box label {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.form .box label span {
+  color: red;
+  font-weight: 400;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  display: none;
+}
+.form .box input[type='text'],
+.form .box input[type='password'],
+.form .box input[type='email'] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--secondary-color);
+    outline-color: var(--secondary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 20px;
+    caret-color: var(--main-color);
+}
+
+.form .condition {
+    margin-top: 15px;
+    display: flex;
+}
+.form .condition p {
+    margin-left: 5px;
+}
+.form .condition p span {
+  color: red;
+  font-weight: 400;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  display: none;
+}
+.form .account {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form .account p strong {
+    color: var(--main-color);
+    margin-left: 10px;
+}
+.form .account button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
